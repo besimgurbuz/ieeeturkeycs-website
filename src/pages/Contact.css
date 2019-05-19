@@ -1,0 +1,10 @@
+.contact {
+    background: url('../contactBG.png') no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    height: 1000px;
+    width: 100%;
+    padding-top: 250px;
+}

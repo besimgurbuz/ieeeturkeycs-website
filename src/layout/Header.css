@@ -1,0 +1,91 @@
+html{ height:100%; }
+body{ min-height:100%; padding:0; margin:0; position:relative; font-family: 'Fira Sans', sans-serif; padding-top: 0 !important}
+
+body::after{ content:''; display:block; height:100px; }
+a:hover {
+    text-decoration: none;
+}
+.fixed-top {
+    margin: 0 auto;
+    padding-top: 5px !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar-brand:hover {
+    opacity: 0.76;
+    transition-duration: 0.5s;
+}
+.nav-item {
+    padding: 0 5px;
+    font-size: 20px;
+}
+.nav-link {
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+.nav-link:hover {
+    color: grey !important;
+}
+.nav-link:checked {
+    color: white;
+}
+.navbar {
+    transition-duration: 0.5s;
+    padding: 0 18%;
+}
+.sticky-bar {
+    background-color: #f1f1f1;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0 !important;
+}
+span {
+    font-weight: 500 !important;
+}
+.sticky-bar .nav-link,span {
+    color: black !important;
+}
+.sticky-bar .nav-link:hover {
+    color: darkgray !important;
+}
+.banner {
+    content: url('../banner.png');
+    width: 250px;
+}
+
+@media only screen and (max-width: 1025px) {
+   .navbar {
+       padding: 0 10%;
+   }
+}
+@media only screen and (max-width: 770px) {
+    .navbar {
+        background-color: #f1f1f1;
+    }
+    .navbar .nav-link {
+        color: black !important;
+    }
+    .navbar .nav-link:hover {
+        color: darkgray !important;
+    }
+    .banner {
+        content: url('../favicon.png');
+        width: 80px;
+    }
+    .h-text {
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:545px) {
+    .h-text span {
+        display: none;
+    }
+    .h-text::after {
+        content: "IEEE Turkey CS";
+    }
+}

@@ -1,0 +1,49 @@
+#cscon {
+    background: url("../cscconBG.png") no-repeat center fixed;
+    background-size: cover; 
+    padding-top: 200px;
+    padding-bottom: 1000px;
+    height: 1000px;
+}
+.r-content {
+    margin-bottom: 50px;
+}
+p {
+    text-indent: 5px;
+}
+.csconIMG {
+    border-radius: 2%;
+}
+.cscon-text {
+    margin-top: 15px;
+}
+@media only screen and (max-width: 576px) {
+    #cscon {
+        padding-top: 150px;
+        padding-bottom: 80em !important;
+    }
+    .csconIMG {
+        position: absolute;
+        visibility: hidden;
+    }
+    .cscon-text {
+        text-align: center !important;
+    }
+}
+@media only screen and (min-width: 577px) {
+    #cscon {
+        padding-bottom: 100em !important;
+    }
+    .img1 {
+        text-align: center !important;
+    }
+}
+@media only screen and (min-width: 990px) {
+    #cscon {
+        padding-bottom: 65em !important;
+    }
+    .csconIMG {
+        width: 450px;
+        margin-top: 10px;
+    }
+}

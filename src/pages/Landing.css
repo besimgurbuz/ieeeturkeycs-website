@@ -1,0 +1,49 @@
+#main {
+    background: url("../bg.gif") no-repeat center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    height: auto;
+    width: 100%;
+    min-height: 60rem;
+    padding: 15rem 0;
+}
+
+.landing {
+    margin-top: 10%;
+}
+
+.landing h1 {
+    color: #f1f1f1;
+
+}
+i {
+    border: solid #f1f1f1;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 14px;
+    transition-duration: 0.5s;
+}
+i:hover{
+    border-color: grey;
+}
+.down-arrow {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#about-us {
+    background-color: #ffff;
+    padding: 6% 0;
+
+}
+#who-we {
+    margin-top: 10%;
+    margin-bottom: 6%;
+    
+}
+@media only screen and (max-width: 1300px) {
+    #about-us {
+        padding-bottom: 100px;
+    }
+}
