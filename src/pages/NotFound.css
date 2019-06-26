@@ -1,0 +1,9 @@
+#notF {
+    font-family:  'Fira Sans', sans-serif;
+    background-color: red;
+    height: 1000px;
+    padding: 15% 0;
+}
+#notF p {
+    font-size: 24px;
+}
