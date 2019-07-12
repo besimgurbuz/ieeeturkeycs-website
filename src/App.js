@@ -9,24 +9,27 @@ import IXtreme from './pages/IXtreme';
 import Cscon from './pages/Cscon';
 import Contact from './pages/Contact';
 import About from './pages/About';
+import ScrollToTop from './helper/ScrollToTop';
 
 class App extends Component {
   render() {
     return (
       <Router>
-          <div>
-            <Header/>
-            <Switch>
-              <Route exact path="/" component = {Landing}/>
-              <Route exact path="/about" component = {About}/>
-              <Route exact path="/madc" component = {MadC}/>
-              <Route exact path="/ieeextreme" component = {IXtreme} />
-              <Route exact path="/cscon" component= {Cscon} />
-              <Route exact path="/contact" component={Contact} />
-              <Route component = {NotFound}/>
-            </Switch>
-            <Footer/>
-          </div>
+          <ScrollToTop>
+            <div>
+              <Header/>
+              <Switch>
+                <Route exact path="/" component = {Landing}/>
+                <Route exact path="/about" component = {About}/>
+                <Route exact path="/madc" component = {MadC}/>
+                <Route exact path="/ieeextreme" component = {IXtreme} />
+                <Route exact path="/cscon" component= {Cscon} />
+                <Route exact path="/contact" component={Contact} />
+                <Route component = {NotFound}/>
+              </Switch>
+              <Footer/>
+            </div>
+          </ScrollToTop>
       </Router>
     );
   }
